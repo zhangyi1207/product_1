@@ -26,14 +26,13 @@
   margin-right: 26px;
 }
 
-.header-cen {
-  -background: #0ff;
+.header .header_cen {
   width: 1220px;
   height: 45px;
   margin: 0 auto;
 }
 
-.header-cen ul {
+.header .header_cen ul {
   width: 820px;
   height: 28px;
   float: right;
@@ -41,17 +40,17 @@
   cursor: pointer;
 }
 
-.header-cen ul li:nth-child(1) a {
+.header .header_cen ul li:nth-child(1) a {
   font-weight: 700;
   color: #fff;
 }
 
-.header-cen ul li {
+.header .header_cen ul li {
   list-style: none;
   float: left;
 }
 
-.header-cen ul li a {
+.header .header_cen ul li a {
   display: block;
   height: 28px;
   line-height: 28px;
@@ -61,40 +60,49 @@
   margin: 0 20px 0 20px;
 }
 
-.header-cen ul li a:hover {
+.header .header_cen ul li a:hover {
   color: #fff;
 }
 
-nav {
-  margin: 0 auto;
-  width: 1224px;
+.nav {
+  width: 100%;
+  background: #fff;
+  position: sticky;
+  top: 0;
   height: 74px;
-  background: #0ff;
 }
 
-nav ul {
+.nav .nav_1 {
+  margin: 0 auto;
+  width: 1220px;
+  height: 74px;
+  background: #fff;
+}
+
+.nav .nav_1 ul {
   width: 450px;
   height: 74px;
   line-height: 74px;
 }
 
-nav ul li {
+.nav .nav_1 ul li {
   list-style: none;
   float: left;
 }
 
-nav ul li a {
+.nav .nav_1 ul li a {
   text-decoration: none;
   margin-right: 30px;
   font-size: 14px;
   color: #4c4c4c;
 }
 
-nav form {
+.nav .nav_1 form {
+  position: relative;
   float: right;
 }
 
-nav form input {
+.nav .nav_1 form input {
   float: right;
   margin-top: 20px;
   width: 330px;
@@ -105,9 +113,8 @@ nav form input {
   outline: none;
 }
 
-nav form div a {
+.nav .nav_1 form a {
   text-decoration: none;
-  position: absolute;
   border: 1.5px solid #a7c1f9;
   color: #3965cc;
   width: 42px;
@@ -115,6 +122,86 @@ nav form div a {
   border-radius: 8px;
   text-align: center;
   background: #e5efff;
-  right: 166px;
-  top: 74px;
+  position: absolute;
+  top: 28px;
+  left: 314px;
+}
+
+footer {
+  height: 354px;
+  background: #fafafa;
+}
+
+footer .foot {
+  width: 1224px;
+  height: 222px;
+  margin: 0 auto;
+  background: #0ff;
+}
+
+footer .foot .foot_left {
+  width: 700px;
+  height: 222px;
+}
+
+footer .foot .foot_left ul {
+  width: 700px;
+  height: 222px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+footer .foot .foot_left ul li {
+  width: 140px;
+  list-style: none;
+  color: #969696;
+  font-size: 12px;
+}
+
+footer .foot .foot_left ul li p {
+  padding-bottom: 14px;
+}
+
+footer .foot .foot_left ul li p:nth-of-type(1) {
+  font-weight: 800;
+  color: #646464;
+  padding-bottom: 30px;
+}
+
+footer .foot .foot_left ul li p:nth-of-type(2) {
+  cursor: pointer;
+}
+
+footer .foot .foot_left ul li p:nth-of-type(2):hover {
+  color: #5079d9;
+}
+
+footer .foot .foot_left ul li p:nth-of-type(3) {
+  cursor: pointer;
+}
+
+footer .foot .foot_left ul li p:nth-of-type(3):hover {
+  color: #5079d9;
+}
+
+footer .foot .foot_left ul li p:nth-of-type(4) {
+  cursor: pointer;
+}
+
+footer .foot .foot_left ul li p:nth-of-type(4):hover {
+  color: #5079d9;
+}
+
+footer .foot .foot_right {
+  width: 500px;
+  height: 222px;
+  float: right;
+  top: 0;
+}
+
+footer .foot_bottom {
+  width: 1224px;
+  height: 132px;
+  background: #0ff;
 }

@@ -1,0 +1,17 @@
+.banner1 {
+  width: 1220px;
+  height: 556px;
+  background: #ededed;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+
+.banner1 a {
+  text-decoration: none;
+}
+
+.banner1 a img {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
