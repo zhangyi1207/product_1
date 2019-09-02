@@ -7,28 +7,122 @@
     <title>首页</title>
     <link rel="stylesheet" href="css/index.min.css">
     <link rel="stylesheet" href="css/public.min.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
     <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/index.min.js"></script>
 </head>
 <body>
+    <!-- 继承来的头部 -->
     <div class="public_top"></div>
+    <div class="public_nav"></div>
+    <!--banner-->
     <div class="banner1">
         <a href=""><img src="img/banner1.png" alt=""></a>
     </div>
+    <!--热门商品-->
     <div class="hotCommodity">
-        <p>热门商品<span>&lt;</span><span>&gt;</span></p>
+        <p>热门商品
+            <span class="iconfont icon-07jiantouxiangyou"></span>
+            <span class="iconfont icon-07jiantouxiangzuo"></span>
+        </p>
         <ul>
-            <li><img src="img/hotC_black.png" alt=""></li>
-            <li><img src="img/hotC_blue.png" alt=""></li>
-            <li><img src="img/hotC_White.png" alt=""></li>
-            <li><img src="img/hotC_box.png" alt=""></li>
-            <li><img src="img/hotC_photo.png" alt=""></li>
-            <li><img src="img/hotC_DNA.png" alt=""></li>
+            <li>
+                <img src="img/hotC_black.png" alt="">
+                <div>Smartisan T恤 薛定谔</div>
+                <div>产品介绍</div>
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h6>
+                    <span class="h6_1">￥149.00</span>
+                    <span class="h6_2">
+                        <a href="">查看详情</a>
+                        <a href="">加入购物车</a>
+                    </span>
+                </h6>
+            </li>
+            <li>
+                <img src="img/hotC_box.png" alt="">
+                <div>地平线8号旅行箱 冰川粉</div>
+                <div>高级淡雅，颠覆你对粉色的固有想象</div>
+                <div>
+                    <span></span>
+                </div>
+                <h6>￥399.00</h6>
+            </li>
+            <li>
+                <img src="img/hotC_photo.png" alt="">
+                <div>坚果三脚架自拍杆</div>
+                <div>两种模式，随时随地都能拍得开心</div>
+                <div>
+                    <span></span>
+                </div>
+                <h6>￥99.00</h6>
+            </li>
+            <li>
+                <img src="img/hotC_DNA.png" alt="">
+                <div>各色DNA检测套装</div>
+                <div>千万级基因位点数据解读</div>
+                <div>
+                    <span></span>
+                </div>
+                <h6>￥499.00</h6>
+            </li>
+            <li>
+                <img src="img/hotC_black.png" alt="">
+                <div>Smartisan T恤 薛定谔</div>
+                <div>产品介绍</div>
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h6>￥149.00</h6>
+            </li>
+            <li>
+                <img src="img/hotC_box.png" alt="">
+                <div>地平线8号旅行箱 冰川粉</div>
+                <div>高级淡雅，颠覆你对粉色的固有想象</div>
+                <div>
+                    <span></span>
+                </div>
+                <h6>￥399.00</h6>
+            </li>
+            <li>
+                <img src="img/hotC_photo.png" alt="">
+                <div>坚果三脚架自拍杆</div>
+                <div>两种模式，随时随地都能拍得开心</div>
+                <div>
+                    <span></span>
+                </div>
+                <h6>￥99.00</h6>
+            </li>
+            <li>
+                <img src="img/hotC_DNA.png" alt="">
+                <div>各色DNA检测套装</div>
+                <div>千万级基因位点数据解读</div>
+                <div>
+                    <span></span>
+                </div>
+                <h6>￥499.00</h6>
+            </li>
         </ul>
     </div>
-    
+
+    <!-- 继承来的尾部 -->
+    <div class="public_bottom"></div>
+    <!-- JQuery继承部分 -->
     <script>
         $(function(){
-            $('.public_top').load('public.html');
+            $('.public_top').load('public.html .header');
+        })
+        $(function(){
+            $('.public_nav').load('public.html .nav');
+        })
+        $(function(){
+            $('.public_bottom').load('public.html footer');
         })
     </script>
 </body>

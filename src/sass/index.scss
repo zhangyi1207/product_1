@@ -1,7 +1,7 @@
 //banner
 .banner1{
     width:1220px;
-    height:556px;
+    height:532px;
     background:#ededed;
     margin:0 auto;
     padding-top:24px;
@@ -11,6 +11,129 @@
         width:100%;
         border-radius:5px;
         border:1px solid #ccc;
+        }
+    }
+}
+//hotCommodity热门商品
+.hotCommodity{
+    border-radius:4px;
+    width:1216px;
+    height:488px;
+    margin:0 auto;
+    background:#fff;
+    p{
+        border-bottom:1px solid #ececec;
+        height:36px;
+        padding:20px 0 0 24px;
+        font-weight:800;
+        color:#66667a;
+        font-size:18px;
+        span{
+            font-weight:800;
+            font-size:18px;
+            float:right;
+        }
+        span:nth-child(1){
+            margin-right:22px;
+        }
+        span:nth-child(2){
+            margin-right:18px;
+        }
+    }
+    ul{
+        width:1216px;
+        height:431px;
+        overflow: hidden;
+        position: relative;
+        li:nth-of-type(1){
+            left:0;
+        }
+        li:nth-of-type(2){
+            left:304px;
+        }
+        li:nth-of-type(3){
+            left:608px;
+        }
+        li:nth-of-type(4){
+            left:912px;
+        }
+        li:nth-of-type(5){
+            left:1216px;
+        }
+        li:nth-of-type(6){
+            left:1520px;
+        }
+        li:nth-of-type(7){
+            left:1826px;
+        }
+        li:nth-of-type(8){
+            left:2130px;
+        }
+        li{
+            position: absolute;
+            list-style:none;
+            width:304px;
+            height:431px;
+            border:1px solid #ececec;
+            text-align:center;
+            img{
+                padding-top:30px;
+                width:220px;
+            }
+            div:nth-of-type(1){
+                font-weight:700;
+                font-size:14px;
+                padding-bottom:18px;
+            }
+            div:nth-of-type(2){
+                font-size:12px;
+                color:#999999;
+                padding-bottom:16px;
+            }
+            div:nth-of-type(3){
+                span{
+                    display:inline-block;
+                    width:10px;
+                    height:10px;
+                    background:#fff;
+                    //background:#000;
+                    border:2px solid #c5c5c5;
+                    border-radius:50%;
+                    margin:0 4px 24px 4px;
+                }
+            }
+            h6{
+                .h6_1{
+                    color:#d44d44;
+                    font-size:16px;
+                    display:none;
+                }
+                .h6_2{
+                    // display:none;
+                    a:nth-child(1){
+                        text-decoration: none;
+                        width:98px;
+                        height:28px;
+                        display:inline-block;
+                        background:#fefefe;
+                        border:1px solid #eaeaea;
+                        line-height:28px;
+                        border-radius:2px;
+                        color:#646464;
+                    }
+                    a:nth-child(2){
+                        text-decoration: none;
+                        width:98px;
+                        height:28px;
+                        display:inline-block;
+                        background:#5681da;
+                        border:1px solid #5681da;
+                        line-height:28px;
+                        border-radius:2px;
+                        color:#fff;
+                    }
+                }
+            }
         }
     }
 }

@@ -8,13 +8,13 @@ let gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     babel = require('gulp-babel'),
     sass = require('gulp-sass');
-//压缩css
-// gulp.task('css',()=>{
-//     gulp.src('./src/sass/*.css')
-//     .pipe(cssnano())
-//     .pipe(rename({suffix : '.min'}))
-//     .pipe(gulp.dest('./dist/css'));
-// })
+//压缩js
+gulp.task('js',()=>{
+    gulp.src('./src/js/*.js')
+    .pipe(uglify())
+    .pipe(rename({suffix : '.min'}))
+    .pipe(gulp.dest('./dist/js'));
+})
 //sass
 gulp.task('sass',()=>{
     gulp.src('./src/sass/*.scss').pipe(sass({outputStyle:'expanded'}))
@@ -22,13 +22,14 @@ gulp.task('sass',()=>{
     .pipe(gulp.dest('./dist/css'));
 })
 //img
-gulp.task('img',()=>{
-    gulp.src('./src/img/*.*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('./dist/img'));
-})
+// gulp.task('img',()=>{
+//     gulp.src('./src/img/*.*')
+//     .pipe(imagemin())
+//     .pipe(gulp.dest('./dist/img'));
+// })
 //监听
 gulp.task('default',()=>{
     gulp.watch('./src/sass/*.scss',['sass']);
-    gulp.watch('./src/img/*.*',['img']);
+    //gulp.watch('./src/img/*.*',['img']);
+    gulp.watch('./src/js/*.js',['js']);
 })
