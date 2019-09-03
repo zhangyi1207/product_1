@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width:100%;
+    height:100%;
+    background:url(../../dist/img/login_bgimg.png);
+}
+.login{
+    width:448px;
+    height:548px;
+    background:#fff;
+    margin:75px auto 75px;
+    text-align:center;
+    img{
+        padding-top:60px;
+        padding-bottom:16px;
+    }
+    h2{
+        color:#333;
+        font-size:17px;
+        padding-bottom:50px;
+    }
+    form{
+        position: relative;
+        .login_id{
+            position: absolute;
+            text-decoration: none;
+            width:132px;
+            height:24px;
+            background:#d16d62;
+            font-size:12px;
+            border-radius:5px;
+            top:14px;
+            left:268px;
+            line-height:24px;
+            color:#fff;
+            display:none;
+        }
+        .login_pwd{
+            position: absolute;
+            text-decoration: none;
+            width:68px;
+            height:26px;
+            background:#d16d62;
+            font-size:12px;
+            border-radius:5px;
+            top:74px;
+            left:330px;
+            line-height:26px;
+            color:#fff;
+            display:none;
+        }
+        span{
+            position: absolute;
+            left:42px;
+            color:#7d7d7d;
+            width:46px;
+            height:30px;
+            display:inline-block;
+            background:#f9f9f9;
+        }
+        span:nth-of-type(1){
+            margin-top:1px;
+            padding-top:16px;
+        }
+        span:nth-of-type(2){
+            top:63px;
+            padding-top:16px;
+        }
+        input{
+            border-radius:8px;
+            border:1px solid #e3e3e3;
+            width:304px;
+            height:46px;
+            padding-left:62px;
+        }
+        input:nth-of-type(1){
+            margin-bottom:14px;
+            outline:none;
+        }
+        input:nth-of-type(2){
+            outline:none;
+        }
+        //注册
+        input:nth-of-type(3){
+            outline:none;
+            background:#b6c7eb;
+            margin-bottom:52px;
+            padding:0;//去除公共样式
+            width:370px;
+            height:48px;
+            color:#fff;
+            font-size:18px;
+        }
+        div:nth-of-type(1){
+            width:362px;
+            height:16px;
+            margin:13px 0 28px 44px;
+            font-size:12px;
+            color:#999;
+            text-align:left;
+            span{
+                width:16px;
+                height:16px;
+                color:#739af3;
+                position:static;
+                padding:0;
+            }
+            a{
+                text-decoration: none;
+                color:#5079d9;
+                float:right;
+            }
+        }
+        //最后一个div，里面有4个span
+        div:nth-of-type(2){
+            font-size:11px;
+            color:#999;
+            text-align:left;
+            margin-left:44px;
+            span{
+                padding:0;
+                position: static;
+                background:none;
+                width:38px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.login_copyright{
+    letter-spacing: 0.5px;
+    width:448px;
+    height:100px;
+    margin:0 auto;
+    font-size:12px;
+    text-align:center;
+    line-height:25px;
+    color:#757575;
+    a{
+        text-decoration: none;
+        color:#849ade;
+    }p{
+        color:#5079d9;
+    }
+}
