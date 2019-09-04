@@ -10,7 +10,7 @@ let gulp = require('gulp'),
     sass = require('gulp-sass');
 //压缩js
 gulp.task('js',()=>{
-    gulp.src('./src/js/*.js')
+    gulp.src('./src/es5/*.js')
     .pipe(uglify())
     .pipe(rename({suffix : '.min'}))
     .pipe(gulp.dest('./dist/js'));
@@ -27,9 +27,18 @@ gulp.task('sass',()=>{
 //     .pipe(imagemin())
 //     .pipe(gulp.dest('./dist/img'));
 // })
+//ES6转ES5
+gulp.task('es5',()=>{
+    gulp.src('./src/js/*.js')
+    .pipe(babel({
+        presets: ['@babel/env']
+    }))
+    .pipe(gulp.dest('./src/es5'));
+})
 //监听
 gulp.task('default',()=>{
     gulp.watch('./src/sass/*.scss',['sass']);
     //gulp.watch('./src/img/*.*',['img']);
-    gulp.watch('./src/js/*.js',['js']);
+    gulp.watch('./src/js/*.js',['es5']);
+    gulp.watch('./src/es5/*.js',['js']);
 })

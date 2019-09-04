@@ -113,5 +113,67 @@ $(function(){
         }
     );
 })
+$(function(){
+    //加入购物车
+    //获取页面元素
+    //获取加入购物车按钮
+    $('.hotCommodity ul li h6 .h6_2 .h6_2_2').each(function(){
+        $(this).click(function(){
+            //获取购物车页所需的信息
+            //商品ID
+            let goodId = $(this).parent('.h6_2').parent('h6').parent('li').attr('data-good-id');
+            // console.log(goodId);
+            //缩略图
+            let goodSrc = $(this).parent('.h6_2').parent('h6').parent('li').children('img').attr('src');
+            //console.log(goodSrc);
+            //商品
+            let goodName = $(this).parent('.h6_2').parent('h6').parent('li').children('img').next().html();
+            // console.log(goodName);
+            let goodPrice = $(this).parent('.h6_2').prev().html();
+            // console.log(goodPrice);
+            //判断是否买过该商品，如果买过，则数量加1，如果没有买过，则添加新商品
+            /*
+                key : carts
+                value : {
+                    "sp1" : {
+                        "name" : goodName,
+                        "src" : goodSrc,
+                        "price" : goodPrice,
+                        "num" : 1
+                    },
+                    "sp2" : {
+                        "name" : goodName,
+                        "src" : goodSrc,
+                        "price" : goodPrice,
+                        "num" : 1
+                    }
+                }
+            */
+            let storage = window.localStorage;
+            let storageStr = storage.carts ? storage.carts : '';
+            let storageObj = convertStorageStrToStorageObj(storageStr);
+            //是否当前商品是否存在 
+            if (goodId in storageObj) {
+                storageObj[goodId].num++; //将现有的商品数量 + 1
+            } else {
+                //将新商品的信息添加到当前对象中。
+                storageObj[goodId] = {
+                    "name": goodName,
+                    "src": goodSrc,
+                    "price": goodPrice,
+                    "num": 1
+                }
+            }
+            //重新创建localStorage
+            storage.carts = JSON.stringify(storageObj);
+        })
+    })
+    function convertStorageStrToStorageObj(str) {
+        if (!str) {
+            return {};
+        }
+        return JSON.parse(str);
+    }
+})
 
 

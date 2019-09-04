@@ -125,6 +125,11 @@ body {
   color: #739af3;
   position: static;
   padding: 0;
+  cursor: pointer;
+}
+
+.login form div:nth-of-type(1) .spanColor {
+  color: #e1e1e2;
 }
 
 .login form div:nth-of-type(1) a {

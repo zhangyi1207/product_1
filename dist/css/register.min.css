@@ -1,0 +1,248 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: url(../../dist/img/login_bgimg.png);
+}
+
+.reg {
+  box-shadow: 0px 5px 20px 10px #f5f5f5 inset;
+  width: 448px;
+  height: 594px;
+  background: #fff;
+  margin: 75px auto 75px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.reg header {
+  font-weight: 800;
+  font-size: 20px;
+  color: #666;
+  height: 60px;
+  background: #f9f9f9;
+  line-height: 60px;
+  margin-bottom: 28px;
+}
+
+.reg main {
+  position: relative;
+}
+
+.reg main select {
+  color: #ada0ad;
+  width: 90px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: absolute;
+  top: 15px;
+  left: 312px;
+  border: none;
+  z-index: 3;
+  outline: none;
+}
+
+.reg main form {
+  position: relative;
+}
+
+.reg main form input {
+  width: 368px;
+  height: 46px;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+  padding-left: 60px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.reg main form .reg_ipt_3 {
+  width: 226px;
+}
+
+.reg main form .yanzhengma {
+  width: 130px;
+  height: 46px;
+  margin-left: 15px;
+  margin-bottom: 0;
+  padding: 0;
+  background: #fdfdfd;
+}
+
+.reg main form span {
+  position: absolute;
+  left: 42px;
+  top: 1px;
+  color: #b7b7b7;
+  background: #fbfbfb;
+  width: 46px;
+  height: 44px;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+
+.reg main form .mark1 {
+  top: 1px;
+}
+
+.reg main form .mark2 {
+  top: 62px;
+}
+
+.reg main form .mark3 {
+  top: 124px;
+}
+
+.reg main form .mark4 {
+  top: 185px;
+}
+
+.reg main form .mark5 {
+  top: 246px;
+}
+
+.reg main form .checkMark {
+  position: static;
+  background: none;
+  margin-left: -36px;
+  color: #8189e1;
+}
+
+.reg main form .checkMark a {
+  text-decoration: none;
+  color: #8189e1;
+}
+
+.reg main form .checkMark_1 {
+  color: #ccc;
+}
+
+.reg main form b {
+  font-weight: normal;
+  color: #ccc;
+}
+
+.reg main form .reg_ipt_6 {
+  margin-top: 34px;
+  padding: 0;
+  text-align: center;
+  background: #b9cbec;
+  color: #f9efef;
+  margin-bottom: 30px;
+}
+
+.reg main form .hint1 {
+  position: absolute;
+  width: 104px;
+  height: 26px;
+  line-height: 26px;
+  background: #d16d62;
+  font-size: 11px;
+  color: #fff;
+  text-decoration: none;
+  right: 50px;
+  top: 72px;
+  border-radius: 5px;
+  display: none;
+}
+
+.reg main form .hint2 {
+  position: absolute;
+  width: 104px;
+  height: 26px;
+  line-height: 26px;
+  background: #d16d62;
+  font-size: 11px;
+  color: #fff;
+  text-decoration: none;
+  right: 50px;
+  top: 194px;
+  border-radius: 5px;
+  display: none;
+}
+
+.reg main form .hint3 {
+  color: #ccc;
+  width: 340px;
+  height: 46px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 4;
+  background: #fff;
+  left: 40px;
+  top: 230px;
+  display: none;
+}
+
+.reg main form .hint3 .inner {
+  background-color: #FFF;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  /* 旋转小方块并调整位置形成尖角 */
+  position: relative;
+  left: 145px;
+  top: -6px;
+  transform: rotate(45deg);
+  border-right: 0px;
+  border-bottom: 0px;
+}
+
+.reg main form .hint4 {
+  position: absolute;
+  width: 104px;
+  height: 26px;
+  line-height: 26px;
+  background: #d16d62;
+  font-size: 11px;
+  color: #fff;
+  text-decoration: none;
+  right: 50px;
+  top: 256px;
+  border-radius: 5px;
+  display: none;
+}
+
+.reg p {
+  width: 368px;
+  height: 60px;
+  border-top: 1px solid #dfdfdf;
+  display: inline-block;
+  line-height: 60px;
+  color: #999;
+  font-size: 11px;
+}
+
+.reg p a {
+  text-decoration: none;
+  color: #5079d9;
+}
+
+footer {
+  letter-spacing: 0.5px;
+  width: 448px;
+  height: 100px;
+  margin: 0 auto;
+  font-size: 12px;
+  text-align: center;
+  line-height: 25px;
+  color: #757575;
+}
+
+footer a {
+  text-decoration: none;
+  color: #849ade;
+}
+
+footer p {
+  color: #5079d9;
+}

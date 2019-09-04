@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../font/iconfont.css">
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/login.min.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
 </head>
 <body>
     <div class="login">
@@ -19,10 +20,10 @@
             <a class="login_pwd" href="">密码错误</a>
             <span class="iconfont icon-morentouxiang"></span><input class="ipt_1" type="text" placeholder="手机号/邮箱"><br>
             <span class="iconfont icon-mima"></span><input class="ipt_2" type="password" placeholder="密码"><br>
-            <div>
-                <span class="iconfont icon-icon_duihao-mian "></span> 自动登录<a href="">注册Smartisan ID | 忘记密码?</a>
+            <div class="autoLogin">
+                <span class="iconfont icon-icon_duihao-mian "></span> 自动登录<a href="">忘记密码?</a> <a href="javaScript:;" class="registor">注册Smartisan ID |</a> 
             </div>
-            <input type="submit" value="登录">
+            <input type="button" class="ipt_3" value="登录">
             <div>
                 其他账号登录:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span class="iconfont icon-weixin"></span>
