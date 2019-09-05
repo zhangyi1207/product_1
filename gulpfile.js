@@ -17,16 +17,16 @@ gulp.task('js',()=>{
 })
 //sass
 gulp.task('sass',()=>{
-    gulp.src('./src/sass/*.scss').pipe(sass({outputStyle:'expanded'}))
+    gulp.src('./src/sass/*.scss').pipe(sass({outputStyle:'compressed'}))
     .pipe(rename({suffix:'.min'}))
     .pipe(gulp.dest('./dist/css'));
 })
 //img
-// gulp.task('img',()=>{
-//     gulp.src('./src/img/*.*')
-//     .pipe(imagemin())
-//     .pipe(gulp.dest('./dist/img'));
-// })
+gulp.task('img',()=>{
+    gulp.src('./dist/img/*.*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./dist/img'));
+})
 //ES6转ES5
 gulp.task('es5',()=>{
     gulp.src('./src/js/*.js')

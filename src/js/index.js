@@ -129,6 +129,7 @@ $(function(){
             //商品
             let goodName = $(this).parent('.h6_2').parent('h6').parent('li').children('img').next().html();
             // console.log(goodName);
+            //价格
             let goodPrice = $(this).parent('.h6_2').prev().html();
             // console.log(goodPrice);
             //判断是否买过该商品，如果买过，则数量加1，如果没有买过，则添加新商品
